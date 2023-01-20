@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ScatterPlot } from '../../components/scatter-plot';
 import { InformationList } from '../../components/information-list';
 import data from '../../assets/trajectories.json';
+import * as Styled from './main.styles';
 
 const Main = () => {
   const [personData, setPersonData] = useState(data[0]);
@@ -14,15 +15,15 @@ const Main = () => {
   };
 
   return (
-    <div>
-      <select onChange={handlePersonChange}>
+    <Styled.Container>
+      <Styled.Selector onChange={handlePersonChange}>
         {data.map((item) => (
           <option key={item.id}>{item.id}</option>
         ))}
-      </select>
+      </Styled.Selector>
       <ScatterPlot data={sortedArray} />
       <InformationList data={sortedArray} />
-    </div>
+    </Styled.Container>
   );
 };
 

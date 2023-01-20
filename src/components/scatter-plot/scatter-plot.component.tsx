@@ -2,8 +2,9 @@ import { useLayoutEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { ScatterPlotProps } from './scatter-plot.types';
 import React from 'react';
+import * as Styled from './scatter-plot.styles';
 
-const SCATTER_MARGIN = { top: 10, right: 30, bottom: 30, left: 60 };
+const SCATTER_MARGIN = { top: 10, right: 30, bottom: 30, left: 20 };
 const SCATTER_WIDTH = 800 - SCATTER_MARGIN.left - SCATTER_MARGIN.right;
 const SCATTER_HEIGHT = 500 - SCATTER_MARGIN.top - SCATTER_MARGIN.bottom;
 const POINT_COLOR = '#69b3a2';
@@ -54,7 +55,7 @@ const ScatterPlot: React.FC<ScatterPlotProps> = ({ data }) => {
       .style('fill', POINT_COLOR);
   }, [data]);
 
-  return <div ref={axisRef} />;
+  return <Styled.Scatter ref={axisRef} />;
 };
 
 export default React.memo(ScatterPlot);
