@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/test-digeiz/static/js/main.e9631b29.js",
+    "main.js": "/test-digeiz/static/js/main.8103499f.js",
     "static/js/787.19f81d24.chunk.js": "/test-digeiz/static/js/787.19f81d24.chunk.js",
     "index.html": "/test-digeiz/index.html",
-    "main.e9631b29.js.map": "/test-digeiz/static/js/main.e9631b29.js.map",
+    "main.8103499f.js.map": "/test-digeiz/static/js/main.8103499f.js.map",
     "787.19f81d24.chunk.js.map": "/test-digeiz/static/js/787.19f81d24.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e9631b29.js"
+    "static/js/main.8103499f.js"
   ]
 }
