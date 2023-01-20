@@ -2,12 +2,10 @@ import { PathPart } from '../interfaces/path.interfaces';
 import { Point } from '../interfaces/point.interface';
 
 const getDistanceBetweenPoints = (startPoint: Point, endPoint: Point): number =>
-  Math.sqrt(Math.pow(Math.abs(startPoint.x - endPoint.x), 2) + Math.pow(Math.abs(startPoint.y - endPoint.y), 2));
+  Math.sqrt(Math.pow(startPoint.x - endPoint.x, 2) + Math.pow(startPoint.y - endPoint.y, 2));
 
 const getArrayOfDistances = (data: PathPart[]): Array<number> =>
-  Array.from({ length: data.length - 1 }).map((_, index) =>
-    getDistanceBetweenPoints({ x: data[index].x, y: data[index].y }, { x: data[index + 1].x, y: data[index + 1].y }),
-  );
+  Array.from({ length: data.length - 1 }).map((_, index) => getDistanceBetweenPoints(data[index], data[index + 1]));
 
 export const getAverageSpeed = (data: PathPart[]): number => {
   const filteredArrayOfDistances = getArrayOfDistances(data).filter((item) => item !== 0);

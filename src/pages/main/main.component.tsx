@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ScatterPlot } from '../../components/scatter-plot';
 import { InformationList } from '../../components/information-list';
-import data from '../../assets/trajectoires.json';
+import data from '../../assets/trajectories.json';
 
 const Main = () => {
   const [personData, setPersonData] = useState(data[0]);
