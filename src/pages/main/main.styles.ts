@@ -7,5 +7,5 @@ export const Container = styled.div`
 
 export const Selector = styled.select`
   width: 200px;
-  margin-left: 100px;
+  margin-left: 25px;
 `;
