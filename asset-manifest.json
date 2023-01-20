@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/test-digeiz-task/static/js/main.e973c848.js",
+    "static/js/787.19f81d24.chunk.js": "/test-digeiz-task/static/js/787.19f81d24.chunk.js",
+    "index.html": "/test-digeiz-task/index.html",
+    "main.e973c848.js.map": "/test-digeiz-task/static/js/main.e973c848.js.map",
+    "787.19f81d24.chunk.js.map": "/test-digeiz-task/static/js/787.19f81d24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e973c848.js"
+  ]
+}
